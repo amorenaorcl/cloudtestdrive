@@ -176,8 +176,9 @@ You have connected your Autonomous Transaction Processing Cloud instance to Orac
 
 **-File --> Open:** aone/create_schema.sql
 
-**-Run Script** (F5)
+**-Run Script** (F5) ---- (You will be creating a few tables and inserting data into the ATP database)
 
+- You can now verify the objects were created correctly.
 - You are now ready to move to the next lab.
 
 ------
