@@ -3,7 +3,7 @@
 ![](../../common/images/customer.logo2.png)
 # Microservices on ATP
 
-## Part 5: Deploy your container on top of your Kubernetes Cluster
+## Part 4: Deploy your container on top of your Kubernetes Cluster
 
 #### **Introduction**
 
@@ -45,7 +45,6 @@ Let’s get started!
   ==> Don't forget to **Save** the job !
 
   
-
 ### Step 2: Configure the environment to point to your cloud instance
 
 - Upload the kubeconfig file into the repository.  During the creation of the cluster, a file called **mykubeconfig** was generated.  This file is required to connect to your cluster from within the build job.
@@ -235,5 +234,3 @@ Congratulations, you have finished this lab !!!!
 Because you did all this via a CI/CD chain, making a small change in the source code of your application will trigger the re-deployment and make your change immediately visible.
 
 ---
-[Go to ATP Overview Page](../../ATP/readme.md)
-
