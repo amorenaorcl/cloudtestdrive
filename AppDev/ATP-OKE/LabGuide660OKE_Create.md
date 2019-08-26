@@ -1,10 +1,9 @@
-[Go to ATP Overview Page](../../ATP/readme.md)
 
 ![](../../common/images/customer.logo2.png)
 
 # Microservices on ATP
 
-## Part 3: Setup your Managed Kubernetes Instance
+## Part 2: Setup your Managed Kubernetes Instance
 
 This Lab describes how to instantiate an **Oracle Managed Kubernetes cluster using Terraform**, including all the required network elements such as VNC's, subnets and access lists.
 #### **Introduction**
@@ -18,8 +17,6 @@ In this lab we will perform the steps described below :
 
 Below you find a detailed description of these steps, with screendumps and explanations where to find the various OCID's and how to install the required commands `terraform` and `kubectl` on your local machine.
 
-
-
 ### Step 1: Collect Infrastructure Info for your environment: ###
 
 You need to collect a series of OCID's from your instance in order for Terraform to access your instance:
@@ -29,8 +26,6 @@ You need to collect a series of OCID's from your instance in order for Terraform
 - User OCID
 - API Key fingerprint
 - Private key API local path
-
-
 
 
 Screen shots of the various locations to find this information
@@ -52,7 +47,6 @@ Screen shots of the various locations to find this information
 - **Private Key API Path**
   - This is the local path on your laptop where the private key file is located.  
   - In case you are running Terraform on a Linux instance that was provided to you, you can download the private key using the Firefox browser and the document link provided by your instructor.
-
 
 
 ### Step 2: Set the Terraform parameters and run the script ###
@@ -167,10 +161,5 @@ resource "oci_core_virtual_network" "K8SVNC" {
     secret/jle-ocirsecret created
     ```
   
-    
-
-
 
 ---
-
-[Go to ATP Overview Page](../../ATP/readme.md)
