@@ -20,14 +20,6 @@ This page will guide you through the following activities :
   - terraform
   - Sql Developer
 
-
-
-**ATTENTION** : if you are running this lab in a **Instructor-provided environment**, your Developer Cloud instance has already been created, **you can skip the steps on this page**.  A link to the instance will be provided by your instructor.
-
-
-
-## Steps to execute
-
 ### Step 1: Setting up Developer Cloud Service ###
 
 This step will guide you through the setup of a new Developer Cloud instance :
@@ -35,8 +27,6 @@ This step will guide you through the setup of a new Developer Cloud instance :
 - Enabling DevCS on your Dashboard
 - Creating a Developer Cloud instance
 - Configuring the Storage and Build parameters for your DevCS instance
-
-
 
 #### Enable DevCS on your PaaS dashboard ####
 
@@ -47,7 +37,6 @@ This step will guide you through the setup of a new Developer Cloud instance :
 In case your cloud account is linked straight to the OCI dashboard, you need to use the following menu item on the left to reach the PaaS dashboard:
 
 ![alt text](images/devcs/gotopaas.png)
-
 
 
 - Make sure the "Developer Cloud" service is "visible" on the dashboard as in the above screenshot.  If this is not the case, use the "Customize Dashboard" button to enable it.
@@ -96,15 +85,11 @@ You will use the **OCI** type of setup, please ignore the *OCI Classic* setup in
 
 A detailed explanation of these steps is provided in [this section of the Developer Cloud Documentation](https://docs.oracle.com/en/cloud/paas/developer-cloud/csdcs/service-setup.html#GUID-0FCE0C4F-75F4-43BC-8699-EBE039DA5E7A).  Navigate to that page, then use the **Back** button of your browser to returrn to this location.
 
-
-
-#### Create a Virtual Machine
+#### Create a Virtual Machine per build jobs
 
 - On the left-side menu, select the top level **Organization** menu, then click on **Virtual Machines Templates** in the top menu.  Next you can hit the **Create Template** button.
 
 ![alt text](images/devcs/NewTemplate2.png)
-
-
 
 - In the dialog box, specify a name, for example **DockerOCIOKE**  and use the default **Oracle Linux 7** image.  Then hit the **Create** button.
 
@@ -123,14 +108,10 @@ A detailed explanation of these steps is provided in [this section of the Develo
 
 ![alt text](images/devcs/im06-2.png)
 
-
-
 - Finally, navigate to the **Build Virtual Machines** menu on the top menu, and hit the **+ Create VM** button.
 
   ![alt text](images/devcs/im07-2.png)
 
-  
-  
   In the dialog that pops up, enter following values:
   
   - Choose **Quantity = 1**
@@ -145,15 +126,11 @@ A detailed explanation of these steps is provided in [this section of the Develo
 
 You finished all the steps to finalize the Developer Cloud setup.  
 
-
-
 ### **STEP 2: Create a Compartment**
 
 - In the Cloud Infrastructure Console, click on the hamburger menu on the top left of the screen. From the pull-out menu, under Identity, click Compartments.
 
 ![](images/100/Compartments.jpeg)
-
-
 
 - You will see the list of compartments currently available in your instance, which will include at least the root compartment of your tenancy (with has the tenancy name). 
   - ![](images/100/ListCompartmentsCTDOKE.png)
@@ -170,13 +147,7 @@ Enter the following in create Compartment window
 
 - You can verify the compartment created on Compartments page
 
-
-
-
-
 ### **STEP 3**: Add a Policy Statement for OKE
-
-- If you are using an Instructor provided instance, this policy will already be defined.
 
 - Before the Oracle managed Kubernetes service can create compute instances in your OCI tenancy, we must explicitly give it permission to do so using a policy statement. From the OCI Console navigation menu, choose **Identity->Policies**.
 
@@ -199,10 +170,7 @@ Enter the following in create Compartment window
   ![img](images/devcs/LabGuide200-bd5bcbd1.png)
 
 
-
 ### STEP 4: Create an API user with a certificate
-
-**ATTENTION** : if you are using an Instructor-provided instance, a user called **api.user** will already have been set up for you, and the keys, fingerprints and tokens of this user will be provided to you.
 
 - Add an API (non-SSO) user with an API key:
 
@@ -227,7 +195,6 @@ Enter the following in create Compartment window
   ![](images/660/OkeUser.png)
 
 
-
 - Create an Auth Token for the user api.user
 
   - Take care to copy the Token string in a file on your PC : you will nbeed it later, and you cannot retrieve it back from the console.
@@ -235,7 +202,6 @@ Enter the following in create Compartment window
     ![](images/660/Auth_token.png)
 
   
-
 ### STEP 4: Install the required software on your laptop
 
 #### Installing git
@@ -288,8 +254,6 @@ At this step the server connection failure is normal. For easier usage it is rec
 $ source <(kubectl completion bash)
 ```
 
-
-
 ##### Linux machines
 
 For Linux, use the same sequence as described above for Linux, only replace the CURL command with the following:
@@ -328,10 +292,7 @@ Unable to connect to the server: dial tcp 192.168.99.100:8443: connectex: A conn
 ```
 
 
-
 ---
-
-
 
 #### Installing terraform
 
@@ -344,16 +305,11 @@ Terraform is an open-source infrastructure as code software tool created by Hash
   - On Windows: go to System Steetings, Advanced, Environment Variables, and add the path to your Terraform directory 
 
 
-
 ##### Installing Oracle SQL Developer
 
 You should have Oracle SQL Developer installed on your machine. If not, you can download the latest version from [here](https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html).
 
 
 
-
-
 ---
-
-[Go to Overview Page](README.md)
 
