@@ -149,12 +149,20 @@ WElcome_123#
 Enter the following in New database connection
 
 **Connection Name**: Name for your connection
+
 **Username**: admin
+
 **Password**: your ATP database password
+
 **Connection Type**: Cloud Wallet
+
 **Role**: Default
+
 **Configuration File**: Click on Browse and select the wallet file you downloaded
-**Service**: 'databasename_high' Database name followed by suffix low, medium or high. These suffixes determine degree of parallelism used and are relevant for a DSS workload. For OLTP workloads it's safe to select any of them. Example: **atplab_high**
+
+**Service**: 'databasename_high' Database name followed by suffix low, medium or high. These suffixes determine degree of parallelism used and are relevant for a DSS workload. For OLTP workloads it's safe to select any of them. Example: 
+
+**atplab_high**
 
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-8.png)
 
@@ -170,8 +178,9 @@ You have connected your Autonomous Transaction Processing Cloud instance to Orac
 
 ### **STEP 4: Configure and load data into the ATP instance with SQL Developer**
 
-**File --> Open --> Select aone/create_schema.sql
-**Run Script (F5)
+**File --> Open ** aone/create_schema.sql
+
+**Run Script ** (F5)
 
 - You are now ready to move to the next lab.
 
