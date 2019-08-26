@@ -174,13 +174,11 @@ You have connected your Autonomous Transaction Processing Cloud instance to Orac
 
 ### **STEP 4: Configure and load data into the ATP instance with SQL Developer**
 
-**-File --> Open** aone/create_schema.sql
+**-File --> Open:** aone/create_schema.sql
 
 **-Run Script** (F5)
 
 - You are now ready to move to the next lab.
 
 ------
-
-[Go to Overview Page](README.md)
 
