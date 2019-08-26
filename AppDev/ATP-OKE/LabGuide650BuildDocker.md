@@ -3,7 +3,7 @@
 ![](../../common/images/customer.logo2.png)
 # Microservices on ATP
 
-## Part 4: Build a Container image with the aone application runing on ATP
+## Part 2: Build a Container image with the aone application runing on ATP
 
 #### **Introduction**
 
@@ -191,6 +191,4 @@ Once the job finished successfully, you should see something like this :
 You have finished this part of the lab, navigate to the next step to continue!
 
 
-
 ---
-[Go to ATP Overview Page](../../ATP/readme.md)
