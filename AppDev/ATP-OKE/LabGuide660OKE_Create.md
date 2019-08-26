@@ -129,7 +129,7 @@ resource "oci_core_virtual_network" "K8SVNC" {
 
      
 
-   - Then navigate in a browser on your VNC Viewer to the following address:   
+   - Then navigate in a browser on your Laptop to the following address:   
      http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
 
