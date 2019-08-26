@@ -165,22 +165,18 @@ Enter the following in New database connection
 **atplab_high**
 
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-8.png)
-
 - Test your connection and save. The **Status** bar will show **Success** if it is a successful connection.
-
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-9.png)
-
 Click on **Connect**. You now have a secure connection to your cloud database.
-
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-10.png)
 
 You have connected your Autonomous Transaction Processing Cloud instance to Oracle SQL Developer.
 
 ### **STEP 4: Configure and load data into the ATP instance with SQL Developer**
 
-**File --> Open ** aone/create_schema.sql
+**-File --> Open** aone/create_schema.sql
 
-**Run Script ** (F5)
+**-Run Script** (F5)
 
 - You are now ready to move to the next lab.
 
