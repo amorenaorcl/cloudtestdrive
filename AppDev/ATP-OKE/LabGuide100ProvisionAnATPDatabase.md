@@ -142,7 +142,7 @@ WElcome_123#
 
 ### **STEP 3: Connect to the ATP instance with SQL Developer**
 
-- Launch SQL Developer from the desktop and click Add Connection on top left.
+- Launch SQL Developer from your Laptop and click Add Connection on top left.
 
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-7.png)
 
@@ -173,6 +173,21 @@ Click on **Connect**. You now have a secure connection to your cloud database.
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-10.png)
 
 You have connected your Autonomous Transaction Processing Cloud instance to Oracle SQL Developer.
+
+### **STEP 4: Configure and load data into the ATP instance with SQL Developer**
+
+**Connection Name**: Name for your connection
+
+**Username**: admin
+
+**Password**: your ATP database password
+
+**Your Wallet .zip file**: Cloud Wallet
+
+**Your Connect string**: (for example atps_high, where atps2 is the name of the database in this example
+
+**SQL File containing the create script**: aone/create_schema.sql
+
 
 - You are now ready to move to the next lab.
 
