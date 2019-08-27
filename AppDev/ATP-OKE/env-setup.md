@@ -11,7 +11,7 @@ In case you are using a personal instance, either obtained via a free trial or u
 This page will guide you through the following activities :
 
 - Set up Developer Cloud Service
-- Create a compartment called CTDOKE which we will use in this lab
+- Create a compartment called CTDOKE which we will use later in the configuring OKE via Terraform lab
 - Add a Policy statement for OKE
 - Create an API user with a certificate
 - Install some software on your local machine:
