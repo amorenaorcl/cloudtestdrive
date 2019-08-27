@@ -36,7 +36,7 @@ Screen shots of the various locations to find this information
   
 - **Compartment OCID**
   - Navigate to "Identity", "Compartments"
-  - Select the compartment where you want to create the cluser (for example "Demo")
+  - Select the compartment where you want to create the cluser (for example "CTDOKE" you should have created before in the initial setEnv Lab)
   ![](images/660/OkeCompart.png)
   
 - **User OCID** and **API Key Fingerprint**
