@@ -115,18 +115,17 @@ You need to configure your terminal window to point to the kubeconfig configurat
 
 The *kubeconfig* file contains the necessary details and parameters to connect to Oracle Container Engine (Kubernetes cluster). The *clusters* parameter defines the available clusters. 
 
-When you execute a `kubectl` command first it tries to read the default configuration file: *config* file from default location. On Linux it is `~/.kube` and on Windows it is `c:\Users\<USERNAME>\.kube`. But you can store *config* file at different path and even with different name e.g.*kubeconfig*. Just set the configuration file location as KUBECONFIG environment variable in your command line terminal where you want to execute `kubectl` commands.
+When you execute a `kubectl` command first it tries to read the default configuration file: *config* file from default location. On Linux it is `~/.kube` and on Windows it is `c:\Users\<USERNAME>\.kube`. But you can store *config* file at different path and even with different name e.g.*mykubeconfig*. Just set the configuration file location as KUBECONFIG environment variable in your command line terminal where you want to execute `kubectl` commands.
 
 ```
-export KUBECONFIG=~/Downloads/kubeconfig
+export KUBECONFIG=<your path>/mykubeconfig
 ```
-
 
 
 *Remark: in case you are running these commands locally on a Windows machine, the correct syntax is:*
 
 ```
-				set KUBECONFIG=c:\Downloads\kubeconfig
+				set KUBECONFIG=c:\<your path>\mykubeconfig
 ```
 
 
@@ -166,7 +165,7 @@ kubectl proxy --port=8333
 You will be asked to provide the kubeconfig file before you can access the console.
 
 - Choose the Kubeconfig option
-- Click on the "Choose kubeconfig file" area and select the kubeconfig file you have downloaded on your machine
+- Click on the "Choose kubeconfig file" area and select the mykubeconfig file you have downloaded on your machine
 - Click "Sign In"
 
 ![alt text](images/670/kubeproxy.png)
@@ -202,7 +201,7 @@ Using the command line:
   kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP          16h
   ```
 
-  Now elect any of the external IP addresses of the nodes, and combine it with the external port of your service : in the above example : 130.61.56.185:31056
+  Now elect any of the external IP addresses of the nodes (retrived before), and combine it with the external port of your service : in the above example : 130.61.56.185:31056
 
 You can obtain the same info using the Kubernetes dashboard:
 
@@ -217,8 +216,6 @@ You can obtain the same info using the Kubernetes dashboard:
 When you enter this URL in your browser, you should see the below result:
 
 ![alt text](images/670/result.png)
-
-
 
 
 
