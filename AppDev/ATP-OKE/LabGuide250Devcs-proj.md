@@ -1,4 +1,3 @@
-[Go to ATP Overview Page](../../ATP/readme.md)
 
 ![](../../common/images/customer.logo2.png)
 # Microservices on ATP #
@@ -25,16 +24,12 @@ Let’s get started!
 
 In this section, you’ll provision a complete development platform for your team by leveraging DevCS’s web interface.
 
-- Access your Developer Cloud Instance
-  - <u>When using on an Oracle-provided environment</u>: On your VNC viewer, using Firefox, Navigate to the Developer Cloud Service Instance link provided by your instructor.
   - <u>When using a Personal Trial</u>: Use the URL to your Developer Cloud Console you saved during the setup of your environment 
 
 - On the Welcome page, click **New Project**.
 
 
-
 ![](images/150/image001-2.png)
-
 
 
 - Give your project a name that begins with your own name, such as **JohnDunbarATPLab**, to make your project unique.  Then: 
@@ -69,8 +64,6 @@ In this section, you’ll provision a complete development platform for your tea
   - Also on the right you can see project statistics, as well as the UI where you can manage team members.  Let’s take a look at that UI now. 
 
 
-
-
 ### Step 2:  Fetch and review code from the Git repository
 
 - With the **Project Home** selected on the left menu, look to the right and select **Repositories**, then click **+ Create** button.
@@ -84,7 +77,7 @@ In this section, you’ll provision a complete development platform for your tea
 
   - Choose **Import Existing Repository** under **Initial content**
 
-  - Enter https://github.com/CloudTestDrive/ATPDocker.git in the text box: 
+  - Enter https://github.com/amorenaorcl/ATPDocker.git in the text box: 
 
     ![](images/150/image10-2.png)
 
@@ -95,14 +88,11 @@ In this section, you’ll provision a complete development platform for your tea
   ![](images/150/image011-2.png)
 
 
-
-
 ### Step 3:  Cloning your repository locally
 
 In order to easily update and upload files into your Developer repository, we will clone the newly created DevCS repository onto your (VM) machine.
 
-- <u>When using an Oracle provided environment</u>, go to your VNC viewer desktop and open a Terminal window.
-- <u>When using a personal instance</u>, open a Terminal window on your laptop
+- <u>open a Terminal window on your laptop
 - In the home directory, create a directory where you will clone the repository, and move into this directory:
 
 ```
@@ -110,8 +100,6 @@ mkdir dev
 
 cd dev
 ```
-
-
 
 - Copy the URL of your newly created repository in Developer cloud, by navigating to the "Project Home" page on the left, then selecting the **Clone** button of your repository on the right.  Select **Clone with HTTPS** and the URL will be copied.
 
@@ -126,7 +114,6 @@ This will result in following output:
 ![](images/150/image014.png)
 
 
-
 You are now ready to start configuring your CI/CD flows in this project!
 
 - create the necessary database objects
@@ -138,5 +125,4 @@ Go back to the overview page and select the next lab step to continue.
 
 
 ---
-[Go to ATP Overview Page](../../ATP/readme.md)
 
