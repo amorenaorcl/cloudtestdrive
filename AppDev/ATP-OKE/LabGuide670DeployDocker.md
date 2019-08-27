@@ -56,17 +56,16 @@ Let’s get started!
     ```bash
     git add mykubeconfig
     git commit -m "Add kubeconfig"
-    git pull
     git push
     ```
 
-- In the **Git** tab of Developer Cloud, open the file **atp2.yaml**.  This is the deployment profile of your container on the Cluster.  You need to make following changes:
+- In the **Git** tab of Developer Cloud, open the file **atp1.yaml**.  This is the deployment profile of your container on the Cluster.  You need to make following changes:
 
   - Line 17: set the correct image location as you configured it in the BuildContainer job
 
-  - Example for datacenter in Frankfurt (**fra**), tenancy name **mytenancy**, repo path **oowhol** and image name joduatp2:latest container name: 
+  - Example for datacenter in Frankfurt (**fra**), tenancy name **mytenancy**, repo path **am_repo** and image name atp1:latest container name: 
 
-    `fra.ocir.io/mytenancy/oowhol/joduatp2:latest`
+    `fra.ocir.io/mytenancy/am_repo/atp1:latest`
 
     ![](images/670/edit_yaml.png)
 
@@ -74,27 +73,26 @@ Let’s get started!
 
   
 
-### Step 3: ***Optional*** - Personalize the deployment on the cluster
+### Step 3: ***OPTIONAL - NOT REQUIRED IN MOST OF THE CASES*** - Personalize the deployment on the cluster
 
 <u>In case you are sharing a Kubernetes instance with other participants</u>, you need to make sure your deployment can be distinguished from the ones belonging to your colleagues.  You can perform the below steps to achieve this:
 
-- In the **Git** tab of Developer Cloud, re-open the file **atp2.yaml**.  You need to make following extra changes:
+- In the **Git** tab of Developer Cloud, re-open the file **atp1.yaml**.  You need to make following extra changes:
 
-  - Line 4, 8, 13, 16, 27 and 35 : replace the string **atp2** with a string containing your initials, for example for "jle" : **atp2jle**
+  - Line 4, 8, 13, 16, 27 and 35 : replace the string **atp1** with a string containing your initials, for example for "am" : **atp1am**
   - Line 22: use the name of your secret which you created in part 5, containing your initials as in the green box on th picture below
 
   ![](images/670/edit_yaml2_2.png)
 
   - Hit **Commit** to save your changes.
 
-  
 
 - In the **Git** tab of Developer Cloud, open the file **kubescript.sh** by clicking on it, and go into editing mode by clicking on the small pencil in the upper right
 
-  - On line 4 and 6, add your initials in front of the strings beginning with **atp2**
+  - On line 4 and 6, add your initials in front of the strings beginning with **atp1**
   - ![](images/670/kubescript.png)
   - Hit **Commit** to save the changes
-  - As you can see, this shell script refers to the actual Kubernetes deployment configuration file **atp2.yaml**.  
+  - As you can see, this shell script refers to the actual Kubernetes deployment configuration file **atp1.yaml**.  
 
 ### Step 4: Execute and validate your new job
 
@@ -111,7 +109,6 @@ Let’s get started!
 - Although we included a few commands in the build job to show the resulting state of the cluster, the best way to visualize this is by launching the **kubernetes Dashboard**.  This is explained in the next step.
 
 
-
 ### Step 5: Setting up kubectl
 
 You need to configure your terminal window to point to the kubeconfig configuration file that belongs to the cluster you just created. This file has been generated during the terraform setup of your cluster.
@@ -126,7 +123,7 @@ export KUBECONFIG=~/Downloads/kubeconfig
 
 
 
-*Remark: in case you are not using a VNC viewer and running these commands locally on a Windows machine, the correct syntax is:*
+*Remark: in case you are running these commands locally on a Windows machine, the correct syntax is:*
 
 ```
 				set KUBECONFIG=c:\Downloads\kubeconfig
@@ -201,7 +198,7 @@ Using the command line:
   kubectl get services
   
   NAME         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
-  atp2jle      NodePort    10.96.6.240   <none>        3050:31056/TCP   15h
+  atp1         NodePort    10.96.6.240   <none>        3050:31056/TCP   15h
   kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP          16h
   ```
 
