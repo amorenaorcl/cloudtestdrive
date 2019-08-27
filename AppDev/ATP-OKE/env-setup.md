@@ -1,4 +1,4 @@
-[Go to Overview Page](README.md)
+
 
 ![](../../common/images/customer.logo2.png)
 # Microservices on ATP #
