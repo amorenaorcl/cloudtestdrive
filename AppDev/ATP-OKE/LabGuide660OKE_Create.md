@@ -119,8 +119,6 @@ resource "oci_core_virtual_network" "K8SVNC" {
          10.0.12.2   Ready    node    14s   v1.13.5
          ```
 
-         
-
 - To access the Kubernetes console:
 
    - ```
@@ -138,11 +136,10 @@ resource "oci_core_virtual_network" "K8SVNC" {
   - Run the following command, where you need to insert your specific parameters:
 
     ```bash
-    kubectl create secret docker-registry <your-initials>-ocirsecret
+    kubectl create secret docker-registry ocirsecret
     --docker-server=<region-code>.ocir.io --docker-username='<tenancy-name>/<oci-username>' --docker-password='<oci-auth-token>' --docker-email='<email-address>'
     ```
 
-    - **your-initials** as part of the name of the secret so this is your individual secret in case you are working in a shared environment
     - **region-code** is for example **fra** for Frankfurt, **iad** for Ashburn, etc.  See [here](https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryprerequisites.htm#Availab) for details.
     - **tenancy-name** is the name of your Cloud tenancy
     - **oci-username** is the name of the **api.user** you just created
@@ -152,13 +149,13 @@ resource "oci_core_virtual_network" "K8SVNC" {
 - Example command:
   
     ```bash
-    kubectl create secret docker-registry jle-ocirsecret --docker-server=fra.ocir.io --docker-username='mytenancy/api.user' --docker-password='k]j64r{1sJSSF-;)K8' --docker-email='jdoe@acme.com'
+    kubectl create secret docker-registry ocirsecret --docker-server=fra.ocir.io --docker-username='mytenancy/api.user' --docker-password='k]j64r{1sJSSF-;)K8' --docker-email='jdoe@acme.com'
   ```
   
   The result should be 
   
     ```
-    secret/jle-ocirsecret created
+    secret/ocirsecret created
     ```
   
 
