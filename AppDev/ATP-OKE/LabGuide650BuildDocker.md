@@ -26,7 +26,7 @@ Open your project in Develoepr Cloud, and follow the steps below:
   - Registry Name: **MyOCIR**
   - Registry URL: fill in the URL of your OCI Repository.  Example for an instance based in Frankfurt:
      https://fra.ocir.io  , but replace the "fra" by the correct code : **phx** for Phenix,  **lhr** for London, ...
-  - The **Username** is composed of {cloud-tenancy-name}/{username}, for example **gse00014089/api.user** 
+  - The **Username** is composed of {cloud-tenancy-name}/{username}, for example **mytenancy/api.user** 
   - Type your password **token** in the **Password** field - **attention, this is not the password** ! Typically a string looking like : i!co>5426CWaLZ&_Zh!r
 
   ![](images/650/im01.png)
@@ -79,8 +79,6 @@ Open your project in Develoepr Cloud, and follow the steps below:
 - Explanation of these operations:
   We need the library to access the ATP database, called **instantclient** in the environment where we will execute the Docker Build operation, so we can include it in the container.  Since this is a "Licensed" library that can be downloaded from the Oracle website by accepting the T&C's, we automate this operation by supplying a copy on a running Compute instance with the IP address 130.61.120.69.
 
-  
-  
 
 ### Step 3: Add more steps to the build: Execute the Docker commands
 
@@ -91,15 +89,12 @@ Open your project in Develoepr Cloud, and follow the steps below:
     ![](images/650/image038.png)
 
 
-
-
-
 - Using the **Add Step** drop-down, select **Docker Builder->Docker build**. 
 
   - Select the **MyOCIR** registry from the dropdown field of the  **Registry Host** field (should be pre-filled in)
   - The **Image Name** is composed as follows: my_instance_name/your_repo_name/image_name
-    - Example : oractdemeabdmnative/jle_repo/atp01
-    - Use your initials in the repo name to distinguish from other users
+    - Example : mytenancy/am_repo/atp1
+    - Use your initials in the repo name to distinguish from other users in case you are using a shared env
   - In the **Source** radio buttons, click **Context root in Workspace**.
 
 - From the **Add Builder** drop-down, select **Docker Builder->Docker push**. 
@@ -153,7 +148,7 @@ Before we can run the Build Job we just created, we need to parametrize some scr
 - Finally, you need to ensure the docker image has the right connection information for connecting to the database.  Navigate to the folder **aone/scripts**, and locate the file called **dbconfig.js**
 
   - In this file, enter the username, password and connect string of your ATP database.  This is just a crude way of simply setting up connectivity, this should be parametrized in a real-world deployment!
-  - The connect string is of the form **atp2_high**, where atp2 would be your database name.
+  - The connect string is of the form **atp1_high**, where atp1 would be your database name.
   - Hit the **Commit** button to save the modifications.
   
   **Example:**
@@ -161,7 +156,7 @@ Before we can run the Build Job we just created, we need to parametrize some scr
   module.exports= {
   user:"admin",
   password:"Welcome_123@",
-  connectString :"atp2_high"
+  connectString :"atp1_high"
   }
 
 
