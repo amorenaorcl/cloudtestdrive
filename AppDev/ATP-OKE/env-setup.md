@@ -126,7 +126,7 @@ A detailed explanation of these steps is provided in [this section of the Develo
 
 You finished all the steps to finalize the Developer Cloud setup.  
 
-### **STEP 2: Create a Compartment**
+### **STEP 2: Create an OCI Compartment (which we will use later in the configuring OKE via Terraform lab)**
 
 - In the Cloud Infrastructure Console, click on the hamburger menu on the top left of the screen. From the pull-out menu, under Identity, click Compartments.
 
@@ -170,7 +170,7 @@ Enter the following in create Compartment window
   ![img](images/devcs/LabGuide200-bd5bcbd1.png)
 
 
-### STEP 4: Create an API user with a certificate
+### STEP 4: Create an OCI API user with a certificate
 
 - Add an API (non-SSO) user with an API key:
 
