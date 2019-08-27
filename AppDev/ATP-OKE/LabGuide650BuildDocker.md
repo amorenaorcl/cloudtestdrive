@@ -153,8 +153,14 @@ Before we can run the Build Job we just created, we need to parametrize some scr
 - Finally, you need to ensure the docker image has the right connection information for connecting to the database.  Navigate to the folder **aone/scripts**, and locate the file called **dbconfig.js**
 
   - In this file, enter the username, password and connect string of your ATP database.  This is just a crude way of simply setting up connectivity, this should be parametrized in a real-world deployment!
-  - The connect string is of the form **atp2_high**, where atp2 would be your datbase name.
+  - The connect string is of the form **atp2_high**, where atp2 would be your database name.
   - Hit the **Commit** button to save the modifications.
+  Example:
+  module.exports= {
+  user:"admin",
+  password:"Welcome_123@",
+  connectString :"atp2_high"
+  }
 
 - You are now ready to try out your Build Job in the next step!
 
