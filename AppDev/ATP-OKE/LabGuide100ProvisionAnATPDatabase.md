@@ -1,4 +1,3 @@
-[Go to Overview Page](README.md)
 
 ![](../../common/images/customer.logo2.png)
 
@@ -50,7 +49,7 @@ More information about Compartments and Policies is provided in the OCI Identity
 
 ![](./images/100/Picture100-26.jpeg)
 
--  Specify a name for the instance, for example containing your initials for easy reference
+-  Specify a name for the instance, for example: atp1
 
 ![](./images/100/Picture100-27.jpeg)
 
@@ -75,7 +74,6 @@ WElcome_123#
 **My organization already owns Oracle database software licenses**: Oracle allows you to bring your unused on-prem licenses to the cloud and your instances are billed at a discounted rate. This is the default option so ensure you have the right license type for this subscription.
 
 ![](./images/100/Picture100-34.jpeg)
-
 
 
 **Subscribe to new database software licenses and the database cloud service**: Your cloud service instance should include database license. This is an all-inclusive cost and you do not need to bring any additional licenses to cloud.
@@ -108,11 +106,9 @@ For this workshop we will not be creating any TAG NAMESPACE.
 You now have created your first Autonomous Transaction Processing Cloud instance.
 
 
-
 ## Secure Connectivity and Data Access
 
 Now you will configure a secure connection to your Database using Oracle SQL Developer.
-
 
 
 ### **STEP 2: Download the secure connection wallet for your provisioned instance**
@@ -142,7 +138,7 @@ WElcome_123#
 
 ### **STEP 3: Connect to the ATP instance with SQL Developer**
 
-- Launch SQL Developer from your Laptop and click Add Connection on top left.
+- Launch SQL Developer from your Laptop (You should have installed it during the envSetup step) and click Add Connection on top left.
 
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-7.png)
 
@@ -162,7 +158,7 @@ Enter the following in New database connection
 
 **Service**: 'databasename_high' Database name followed by suffix low, medium or high. These suffixes determine degree of parallelism used and are relevant for a DSS workload. For OLTP workloads it's safe to select any of them. Example: 
 
-**atplab_high**
+**atp1_high**
 
 ![](/Users/jleemans/dev/github/cloudtestdrive/AppDev/ATP-OKE/images/200/Picture200-8.png)
 - Test your connection and save. The **Status** bar will show **Success** if it is a successful connection.
