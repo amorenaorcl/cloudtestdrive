@@ -1,4 +1,4 @@
-[Go to the Cloud Test Drive Welcomer Page](../../README.md)
+
 
 ![](../../common/images/customer.logo2.png)
 
