@@ -127,10 +127,10 @@ resource "oci_core_virtual_network" "K8SVNC" {
      kubectl proxy
      ```
 
-     
-
    - Then navigate in a browser on your Laptop to the following address:   
      http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
+     
+   - Provide your mykubeconfig file when requested  
 
 
 - Set up a "Secret" to allow you to pull images from your private repository:
