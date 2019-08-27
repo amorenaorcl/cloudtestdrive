@@ -114,9 +114,9 @@ resource "oci_core_virtual_network" "K8SVNC" {
 
       - ```
          NAME        STATUS   ROLES   AGE   VERSION
-         10.0.10.2   Ready    node    23s   v1.12.6
-         10.0.11.2   Ready    node    30s   v1.12.6
-         10.0.12.2   Ready    node    14s   v1.12.6
+         10.0.10.2   Ready    node    23s   v1.13.5
+         10.0.11.2   Ready    node    30s   v1.13.5
+         10.0.12.2   Ready    node    14s   v1.13.5
          ```
 
          
