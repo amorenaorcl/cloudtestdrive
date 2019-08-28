@@ -102,8 +102,8 @@ Open your project in Develoepr Cloud, and follow the steps below:
 - Using the **Add Step** drop-down, select **Docker Builder->Docker build**. 
 
   - Select the **MyOCIR** registry from the dropdown field of the  **Registry Host** field (should be pre-filled in)
-  - The **Image Name** is composed as follows: my_instance_name/your_repo_name/image_name
-    - Example : mytenancy/am_repo/atp1
+  - The **Image Name** is composed as follows: < your Storage Namespace>/your_repo_name/image_name
+    - Example : fre7tvmkielm/am_repo/atp1
     - Use your initials in the repo name to distinguish from other users in case you are using a shared env
   - In the **Source** radio buttons, click **Context root in Workspace**.
 
@@ -132,7 +132,7 @@ Before we can run the Build Job we just created, we need to parametrize some scr
   - For example, if your wallet folder is named **APT1**, replace the original line with the blow text:
 
     ```dockerfile
-    COPY ./wallet_ATP1 ./wallet_NODEAPPDB2
+    COPY ./Wallet_ATP1 ./wallet_NODEAPPDB2
     ```
 
 - Hit the **Commit** button (upper right) to save your changes.
