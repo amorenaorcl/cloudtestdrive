@@ -9,7 +9,17 @@
 
 In this lab, you’ll learn how to build a Docker image for a Node.js REST service on Oracle Developer Cloud Service (DevCS), using an ATP database as it's data source.
 
-Let’s get started! 
+Let’s get started!
+
+### **STEP 0: Configure and load data into the ATP instance with SQL Developer**
+
+**Open Oracle SQL Developer and connect to your DB Instance "ATP1"**
+
+**-File --> Open:** aone/create_schema.sql
+
+**-Run Script** (F5 or run from the menu) ---- (You will be creating a few tables and inserting data into the ATP database)
+
+- You can now verify the objects were created correctly.
 
 ## Steps
 
