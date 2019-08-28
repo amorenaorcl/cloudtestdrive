@@ -28,8 +28,6 @@ This lab walks you through the steps to get started using the Oracle Autonomous 
 
 - Select the compartment you created previously "DevCSCompartment" (in a real scenario you would have a separated comprtment for it)
 
-![](./images/100/DemoComp.png)
-
 -  Click on **Create Autonomous Transaction Processing Database** button to start the instance creation process
 
 ![](./images/100/Picture100-23.jpeg)
