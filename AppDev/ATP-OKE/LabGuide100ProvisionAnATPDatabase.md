@@ -26,7 +26,7 @@ This lab walks you through the steps to get started using the Oracle Autonomous 
 
 ![](./images/100/Picture100-21.jpeg)
 
-- Select the compartment you created previously 
+- Select the compartment you created previously "DevCSCompartment" (in a real scenario you would have a separated comprtment for it)
 
 ![](./images/100/DemoComp.png)
 
@@ -69,7 +69,7 @@ WElcome_123#
 
 ![](./images/100/Picture100-29.jpeg)
 
-- License Type: You will see 2 options under licensing options. 
+- License Type: You will see 2 options under licensing options. Choose "My Organization already owns License".
 
 **My organization already owns Oracle database software licenses**: Oracle allows you to bring your unused on-prem licenses to the cloud and your instances are billed at a discounted rate. This is the default option so ensure you have the right license type for this subscription.
 
