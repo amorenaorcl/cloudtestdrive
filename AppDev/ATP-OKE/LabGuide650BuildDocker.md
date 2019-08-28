@@ -165,7 +165,7 @@ Before we can run the Build Job we just created, we need to parametrize some scr
   
   module.exports= {
   user:"admin",
-  password:"Welcome_123@",
+  password:"WElcome_123#",
   connectString :"atp1_high"
   }
 
