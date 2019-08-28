@@ -166,13 +166,6 @@ Click on **Connect**. You now have a secure connection to your cloud database.
 
 You have connected your Autonomous Transaction Processing Cloud instance to Oracle SQL Developer.
 
-### **STEP 4: Configure and load data into the ATP instance with SQL Developer**
-
-**-File --> Open:** aone/create_schema.sql
-
-**-Run Script** (F5) ---- (You will be creating a few tables and inserting data into the ATP database)
-
-- You can now verify the objects were created correctly.
 - You are now ready to move to the next lab.
 
 ------
