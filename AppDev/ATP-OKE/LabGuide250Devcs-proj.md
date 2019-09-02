@@ -113,6 +113,14 @@ This will result in following output:
 
 ![](images/150/image014.png)
 
+Copy/Move and unzip the ATP Wallet zip file into the ATPDocker directory just created
+
+- cd ATPDocker
+- cp <dir where you donwloaded>/Wallet_ATP1.zip .
+- Unzip the database credentials zip file e.g.: Wallet_ATP1.zip in the same folder as your Dockerfile
+- git add .
+- git comment -a -m "Added Wallet File"
+- git push
 
 You are now ready to start configuring your CI/CD flows in this project!
 
