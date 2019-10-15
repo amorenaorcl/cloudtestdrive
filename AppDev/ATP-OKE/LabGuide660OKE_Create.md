@@ -10,7 +10,6 @@ This Lab describes how to instantiate an **Oracle Managed Kubernetes cluster usi
 
 In this lab we will perform the steps described below : 
 
-- Open a command prompt and navigate to the **terraform** folder in the ATPDocker git repository folder
 - Edit the file terraform.tfvars and enter your instance OCID's on the first lines
 - run ```terraform init``` , `terraform plan` and `terraform apply` to spin up your infrastructure
 - validate the resulting K8S infrastructure via `kubectl`, using the file **mykubeconfig** that was created 
@@ -54,29 +53,6 @@ Screen shots of the various locations to find this information
 - Open a new Terminal window, and navigate to the **terraform_0.12** folder in the **ATPDocker** git repository folder
 
 - Edit the file terraform.tfvars and enter your instance OCID's on the first lines, using the information collected in the previous section
-
-- Now edit the file **k8s.tf** and add your initials to the **name** of the kubernetes cluster:
-
-   ```
-   resource "oci_containerengine_cluster" "k8s_cluster" {
-   	compartment_id = "${var.compartment_ocid}"
-   	kubernetes_version = "v1.12.6"
-   	name = "k8s_cluster_atp_myInitials"
-   	vcn_id = "${oci_core_virtual_network.K8SVNC.id}"
-   ```
-
-- Edit the file **network.tf** and do the same for the **display_name** of the Virtual Network:
-
-```
-resource "oci_core_virtual_network" "K8SVNC" {
-  cidr_block     = "${var.VPC-CIDR}"
-  compartment_id = "${var.compartment_ocid}"
-  display_name   = "K8S-VNC-ATP-MyInitials"
-  dns_label      = "k8s"
-}
-```
-
-
 
 - Run `terraform init` in this directory, all dependencies, including oci v3 should download
 - ![](images/660/terra_init.png)
