@@ -113,7 +113,7 @@ This will result in following output:
 
 ![](images/150/image014.png)
 
-**Copy/Move and unzip the ATP Wallet zip file into the ATPDocker directory just create**
+**Copy/Move and unzip the ATP DB Wallet zip file into the ATPDocker directory just created**
 
 - cd ATPDocker
 - cp YourDownlodDir/Wallet_ATP1.zip .
@@ -124,13 +124,7 @@ This will result in following output:
 
 **You are now ready to start configuring your CI/CD flows in this project!**
 
-- create the necessary database objects
-- build your application Docker Container
-- deploy the container to a Kubernetes cluster
-
 Go back to the overview page and select the next lab step to continue.
-
-
 
 ---
 
