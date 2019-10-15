@@ -83,7 +83,7 @@ Once the instance is available, you need to configure a few things to be able to
 
 You will use the **OCI** type of setup, please ignore the *OCI Classic* setup instructions.
 
-A detailed explanation of these steps is provided in [this section of the Developer Cloud Documentation](https://docs.oracle.com/en/cloud/paas/developer-cloud/csdcs/service-setup.html#GUID-0FCE0C4F-75F4-43BC-8699-EBE039DA5E7A).  Navigate to that page, then use the **Back** button of your browser to return to this location.
+A detailed explanation of these steps is provided in [this section of the Developer Cloud Documentation](https://docs.oracle.com/en/cloud/paas/developer-cloud/csdcs/service-setup.html#GUID-994ABF40-4096-4944-B8FE-9597242C10C0).  Navigate to that page, then use the **Back** button of your browser to return to this location.
 
 #### Create a Virtual Machine per build jobs
 
